@@ -21,9 +21,9 @@ export default function HomePage() {
         setPageState({ ...pageState, renderImage: true });
       } else {
         setPageState({ ...pageState, errorPopUp: true });
-        // setTimeout(() => {
-        //   setPageState({ ...pageState, errorPopUp: false });
-        // }, 2000);
+        setTimeout(() => {
+          setPageState({ ...pageState, errorPopUp: false });
+        }, 2000);
       }
     }
   }
